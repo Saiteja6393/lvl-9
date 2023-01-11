@@ -28,7 +28,7 @@ app.get("/", async (request, response) => {
       duelater,
       dueToday,
       completedItems,
-      csrfToken: request.csrfToken(),
+      csrfTok: request.csrfTok(),
     });
   } else {
     response.json(overDue, duelater, dueToday, completedItems);
